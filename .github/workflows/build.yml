@@ -1,4 +1,4 @@
-on: [push, pull_request]
+on: push
 name: CI
 
 jobs:
@@ -13,5 +13,10 @@ jobs:
           node-version: 16
           cache: "yarn"
 
-      - run: yarn install --frozen-lockfile
-      - run: yarn test
+      - name: Yarn install
+        run: |
+          yarn set version 3.2.1
+          yarn install
+
+      - name: Run tests
+        run: yarn test

@@ -2,7 +2,7 @@
   "name": "flash-loan-examples",
   "packageManager": "yarn@3.2.1",
   "scripts": {
-    "test": "hardhat test"
+    "test": "hardhat compile && hardhat test"
   },
   "devDependencies": {
     "@ethersproject/abi": "^5.4.7",
