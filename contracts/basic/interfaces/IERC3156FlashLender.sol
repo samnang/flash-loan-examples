@@ -4,6 +4,9 @@ pragma solidity ^0.8.0;
 
 import "./IERC3156FlashBorrower.sol";
 
+/**
+ * @dev The lender interface must be implemented by services wanting to provide a flash loan.
+ */
 interface IERC3156FlashLender {
     /**
      * @dev The amount of currency available to be lent.

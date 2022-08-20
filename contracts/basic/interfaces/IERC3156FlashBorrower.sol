@@ -2,6 +2,9 @@
 
 pragma solidity ^0.8.0;
 
+/**
+ * @dev The borrower interface consists only of the onFlashLoan callback function
+ */
 interface IERC3156FlashBorrower {
     /**
      * @dev Receive a flash loan.
