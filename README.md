@@ -24,6 +24,9 @@ $ yarn test test/basic
 
 - https://eips.ethereum.org/EIPS/eip-3156
 - https://soliditydeveloper.com/eip-3156
+- https://docs.openzeppelin.com/contracts/4.x/api/interfaces#IERC3156FlashLender
+- https://docs.openzeppelin.com/contracts/4.x/api/interfaces#IERC3156FlashBorrower
+- https://docs.openzeppelin.com/contracts/4.x/api/token/erc20#ERC20FlashMint
 
 ## Aave
 
