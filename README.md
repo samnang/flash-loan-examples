@@ -6,6 +6,8 @@ A collection of implementation examples of EIP-3156, Aave, MakerDAO, Uniswap, an
 
 ## Basic
 
+![Flash Loan](images/flash_loan.png?raw=true "Flash Loan")
+
 - [What are Flash Loans in Crypto?](https://www.youtube.com/watch?v=1t1sdlMIPj4)
 - [What are Flash Loans?](https://www.youtube.com/watch?v=YiF6x193fRk)
 - [Flash Loans Explained](https://www.youtube.com/watch?v=mCJUhnXQ76s)
