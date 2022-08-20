@@ -2,7 +2,13 @@
 
 [![CI](https://github.com/samnang/flash-loan-examples/actions/workflows/build.yml/badge.svg)](https://github.com/samnang/flash-loan-examples/actions/workflows/build.yml)
 
-A collection of implementation examples of EIP-3156, Aave, dYdX, Uniswap, and etc...
+A collection of implementation examples of EIP-3156, Aave, MakerDAO, Uniswap, and etc...
+
+## Basic
+
+- [What are Flash Loans in Crypto?](https://www.youtube.com/watch?v=1t1sdlMIPj4)
+- [What are Flash Loans?](https://www.youtube.com/watch?v=YiF6x193fRk)
+- [Flash Loans Explained](https://www.youtube.com/watch?v=mCJUhnXQ76s)
 
 ## How to run
 
@@ -32,13 +38,29 @@ $ yarn test test/basic
 
 ...
 
-## dYdX
+### References
+
+- https://docs.aave.com/developers/guides/flash-loans
+- [Aave - Flash Loan](https://www.youtube.com/watch?v=_GZHt-FVAQs)
+- https://www.alchemy.com/overviews/creating-a-flash-loan-using-aave
+
+## MakerDAO
 
 ...
+
+### References
+
+- https://docs.makerdao.com/smart-contract-modules/flash-mint-module
+- https://github.com/makerdao/dss-flash
 
 ## Uniswap
 
-...
+### References
+
+- https://docs.uniswap.org/protocol/guides/swaps/single-swaps
+- [Uniswap V3 - Single Hop Swap](https://www.youtube.com/watch?v=f5Fuhm_8FjE)
+- [Uniswap - Flash Swaps](https://www.youtube.com/watch?v=v0YekGlQpJU)
+- [Uniswap: Flash Swaps on Uniswap v3](https://www.youtube.com/watch?v=eM4UidkvB-o)
 
 ## Contributors
 
