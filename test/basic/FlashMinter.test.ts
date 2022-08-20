@@ -3,15 +3,15 @@ import { expect } from "chai";
 import { Contract, ContractFactory } from "ethers";
 import { ethers } from "hardhat";
 
-import { FlashMinterMock, FlashBorrower } from "../../typechain-types";
+import { FlashMinterMock, FlashBorrower, ERC20Mock } from "../../typechain-types";
 
 describe("Basic / FlashMinter", async () => {
   let deployer: SignerWithAddress;
   let account1: SignerWithAddress;
-  let lenderContractFactory: ContractFactory;
-  let borrowerContractFactory: ContractFactory;
   let lenderContract: FlashMinterMock;
   let borrowerContract: FlashBorrower;
+  let unsupportedTokenContract: ERC20Mock;
+
   const fee = 10; // 10 == 0.10 %
 
   beforeEach(async () => {
@@ -19,6 +19,8 @@ describe("Basic / FlashMinter", async () => {
 
     lenderContract = (await deployContract("FlashMinterMock", "Wrapped ETH", "WETH", fee)) as FlashMinterMock;
     borrowerContract = (await deployContract("FlashBorrower", lenderContract.address)) as FlashBorrower;
+
+    unsupportedTokenContract = (await deployContract("ERC20Mock", "USD Tether", "USDT")) as ERC20Mock;
   });
 
   it("creates a flash loan", async () => {
@@ -43,7 +45,7 @@ describe("Basic / FlashMinter", async () => {
     await expect(
       lenderContract
         .connect(account1)
-        .flashLoan(borrowerContract.address, ethers.constants.AddressZero, 1000, ethers.constants.HashZero)
+        .flashLoan(borrowerContract.address, unsupportedTokenContract.address, 1000, ethers.constants.HashZero)
     ).to.revertedWith("FlashMinter: Unsupported currency");
   });
 
