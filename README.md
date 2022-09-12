@@ -61,6 +61,7 @@ $ yarn test test/basic
 ### References
 
 - https://docs.uniswap.org/protocol/guides/swaps/single-swaps
+- https://uniswap.org/blog/your-first-uniswap-integration
 - [Uniswap V3 - Single Hop Swap](https://www.youtube.com/watch?v=f5Fuhm_8FjE)
 - [Uniswap - Flash Swaps](https://www.youtube.com/watch?v=v0YekGlQpJU)
 - [Uniswap: Flash Swaps on Uniswap v3](https://www.youtube.com/watch?v=eM4UidkvB-o)
