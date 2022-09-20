@@ -21,7 +21,7 @@ const ercAbi = [
 // $ yarn hardhat node --fork https://eth-mainnet.alchemyapi.io/v2/{YOUR_ALCHEMY_API_KEY}
 //
 // 2. Remove `skip` from the line below and run test with:
-// $ yarn hardhat --network localhost
+// $ yarn hardhat test --network localhost
 describe.skip("SimpleSwap", function () {
   it("Should provide a caller with more DAI than they started with after a swap", async function () {
     /* Deploy the SimpleSwap contract */
